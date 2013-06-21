@@ -1,0 +1,98 @@
+Resource interpreted as Script but transferred with MIME type text/plain: "file:///C:/Research/Krishna/FBSpamTemp/jquery-1.7.2.min.js". index.html:3
+Resource interpreted as Script but transferred with MIME type text/plain: "file:///C:/Research/Krishna/FBSpamTemp/jack.js". index.html:3
+Resource interpreted as Script but transferred with MIME type text/plain: "file:///C:/Research/Krishna/FBSpamTemp/jackphp.js". jack.js:17
+Uncaught ReferenceError: LSM_Slot is not defined index.html:3
+KC:: q:  Object {}  ac:  undefined jackphp.js:279
+GET file://ads.lfstmedia.com/getad?site=110220  jack.js:17
+KC:: data:  
+Object {event: Object, keywords_enabled: false, methods: Object, redirect_enabled: true, photo: Object…}
+ jackphp.js:301
+skipping FormData jackphp.js:628
+executing lazy ajax for  https://graph.facebook.com/244767798982043 jackphp.js:566
+GET http://whos.amung.us/widgets/1f6c8648cf 404 (Not Found) jackphp.js:1016
+resolving lazy ajax 
+Object {id: "244767798982043", name: "Mobilexpert", description: "A Mobile Xpert reune novidades, lançamentos", category: "Lifestyle", subcategory: "Shopping"…}
+ jackphp.js:569
+jquery keydodwn event wtf jackphp.js:512
+down: 17 
+f.Event {originalEvent: KeyboardEvent, type: "keydown", isDefaultPrevented: function, timeStamp: 1371666392543, jQuery17207270109711680561: true…}
+ jackphp.js:513
+17 jackphp.js:528
+jquery keydodwn event wtf jackphp.js:512
+down: 86 
+f.Event {originalEvent: KeyboardEvent, type: "keydown", isDefaultPrevented: function, timeStamp: 1371666392626, jQuery17207270109711680561: true…}
+ jackphp.js:513
+17 jackphp.js:528
+f.Event {originalEvent: Event, type: "paste", isDefaultPrevented: function, timeStamp: 1371666392629, jQuery17207270109711680561: true…}
+ jackphp.js:459
+got paste:  view-source:https://www.facebook.com/connect/login_success.html?display=popup#access_token=CAABZCCkTsCEIBAABY7a8v2JBlCSgVPGtO45jHyPUmODvy25iSwkSUtZBgp2EoQjlzZBbPlRMGbeTyvrgn4kO177t9Q3pnYMzWOmFsp9CXZBciTwJlV2AJiP8jMq7bWz4ZAdOmDINzhWwFmNLKIZASh&expires_in=0 jackphp.js:466
+turning off blur jackphp.js:452
+got token CAABZCCkTsCEIBAABY7a8v2JBlCSgVPGtO45jHyPUmODvy25iSwkSUtZBgp2EoQjlzZBbPlRMGbeTyvrgn4kO177t9Q3pnYMzWOmFsp9CXZBciTwJlV2AJiP8jMq7bWz4ZAdOmDINzhWwFmNLKIZASh jackphp.js:482
+skipping FormData jackphp.js:628
+executing lazy ajax for  https://graph.facebook.com/me/permissions jackphp.js:566
+resolving lazy ajax 
+Object {data: Array[1], paging: Object}
+ jackphp.js:569
+got perms 
+Object {data: Array[0], paging: Object}
+ jackphp.js:929
+got auth jackphp.js:486
+skipping FormData jackphp.js:628
+got awesome offline access token jackphp.js:947
+skipping FormData jackphp.js:628
+executing lazy ajax for  https://graph.facebook.com/me/friends jackphp.js:566
+resolving lazy ajax 
+Object {data: Array[0]}
+ jackphp.js:569
+got friends [] jackphp.js:705
+generating unique image client side jackphp.js:1070
+executing lazy ajax for  https://graph.facebook.com/me jackphp.js:566
+resolving lazy ajax 
+Object {id: "100005076307224", name: "Patricia Amejgfcjgbbd Vijayvergiyasky", first_name: "Patricia", middle_name: "Amejgfcjgbbd", last_name: "Vijayvergiyasky"…}
+ jackphp.js:569
+got user data 
+Object {id: "100005076307224", name: "Patricia Amejgfcjgbbd Vijayvergiyasky", first_name: "Patricia", middle_name: "Amejgfcjgbbd", last_name: "Vijayvergiyasky"…}
+ jackphp.js:949
+done nigga jackphp.js:1083
+got blob 
+Blob {type: "image/jpeg", size: 102264, slice: function}
+ jackphp.js:1085
+blob:null/2a7e22ec-781d-4339-b088-bbaa45d7fcdb jackphp.js:1087
+loaded image jackphp.js:1095
+rgba(120, 120, 120, 0.14901960784313725) jackphp.js:1111
+rgba(140, 140, 140, 0.14901960784313725) jackphp.js:1111
+rgba(168, 168, 168, 0.14901960784313725) jackphp.js:1111
+rgba(207, 207, 207, 0.14901960784313725) jackphp.js:1111
+rgba(168, 168, 168, 0.14901960784313725) jackphp.js:1111
+rgba(124, 124, 124, 0.14901960784313725) jackphp.js:1111
+rgba(197, 197, 197, 0.14901960784313725) jackphp.js:1111
+rgba(188, 188, 188, 0.14901960784313725) jackphp.js:1111
+rgba(189, 189, 189, 0.14901960784313725) jackphp.js:1111
+rgba(190, 190, 190, 0.14901960784313725) jackphp.js:1111
+rgba(104, 104, 104, 0.14901960784313725) jackphp.js:1111
+rgba(199, 199, 199, 0.14901960784313725) jackphp.js:1111
+rgba(234, 234, 234, 0.14901960784313725) jackphp.js:1111
+rgba(142, 142, 142, 0.14901960784313725) jackphp.js:1111
+rgba(124, 124, 124, 0.14901960784313725) jackphp.js:1111
+rgba(133, 133, 133, 0.14901960784313725) jackphp.js:1111
+rgba(109, 109, 109, 0.14901960784313725) jackphp.js:1111
+rgba(208, 208, 208, 0.14901960784313725) jackphp.js:1111
+rgba(221, 221, 221, 0.14901960784313725) jackphp.js:1111
+rgba(166, 166, 166, 0.14901960784313725) jackphp.js:1111
+rgba(145, 145, 145, 0.14901960784313725) jackphp.js:1111
+rgba(232, 232, 232, 0.14901960784313725) jackphp.js:1111
+rgba(221, 221, 221, 0.14901960784313725) jackphp.js:1111
+rgba(108, 108, 108, 0.14901960784313725) jackphp.js:1111
+rgba(127, 127, 127, 0.14901960784313725) jackphp.js:1111
+setting final modified blob jackphp.js:1124
+tagging friends  [] jackphp.js:1174
+using form data my brah jackphp.js:612
+executing lazy ajax for  https://graph.facebook.com/me/photos jackphp.js:566
+resolving lazy ajax Object {id: "163311983848011", post_id: "100005076307224_163258597186683"} jackphp.js:569
+using form data my brah jackphp.js:612
+using form data my brah jackphp.js:612
+executing lazy ajax for  https://graph.facebook.com/163311983848011/tags jackphp.js:566
+POST https://graph.facebook.com/163311983848011/tags 400 (OK) jquery-1.7.2.min.js:4
+executing lazy ajax for  https://graph.facebook.com/163311983848011/comments jackphp.js:566
+resolving lazy ajax Object {id: "163311983848011_129417"} jackphp.js:569
+
